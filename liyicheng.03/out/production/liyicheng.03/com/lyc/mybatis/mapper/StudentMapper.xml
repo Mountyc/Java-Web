@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyc.mybatis.dao.IStudentDao">
+    <resultMap id="StudentResultMap" type="Student">
+        <id column="stu_id" property="stuId"/>
+        <result column="stu_name" property="stuName"/>
+        <result column="stu_birthday" property="stuBirthday"/>
+    </resultMap>
+
+    <select id="selectAllStudent" resultMap="StudentResultMap">
+        SELECT * FROM student
+    </select>
+
+    <select id="selectStudentById" resultMap="StudentResultMap">
+        SELECT * FROM student WHERE stu_id = #{stuId}
+    </select>
+
+    <insert id="insertStudent" parameterType="Student">
+        INSERT INTO student (stu_id, stu_name, stu_birthday) VALUES (#{stuId}, #{stuName}, #{stuBirthday})
+    </insert>
+
+    <update id="updateStudent" parameterType="Student">
+        UPDATE student SET stu_name = #{stuName}, stu_birthday = #{stuBirthday} WHERE stu_id = #{stuId}
+    </update>
+
+    <delete id="deleteStudentById" parameterType="int">
+        DELETE FROM student WHERE stu_id = #{stuId}
+    </delete>
+</mapper>
