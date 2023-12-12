@@ -1,0 +1,20 @@
+table {
+    border-collapse: separate;
+    border-top: 1px solid #dfe6ec;
+    border-left: 1px solid #dfe6ec;
+}
+thead tr th {
+    background-color: #f8f8f9;
+    padding: 6px;
+    text-align: center;
+    border-bottom: 1px solid #dfe6ec;
+    border-right: 1px solid #dfe6ec;
+    text-align: center;
+}
+tbody tr td {
+    padding: 6px;
+    text-align: center;
+    height: 34px;//设置单元格最小高度
+border-bottom: 1px solid #dfe6ec;
+    border-right: 1px solid #dfe6ec;
+}

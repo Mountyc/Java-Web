@@ -1,0 +1,25 @@
+#logo{
+    width: 100%;
+    height:150px;
+    margin: 10px;
+}
+#login{
+    text-align: center;
+    border: 1px solid;
+    width: 220px;
+    height: 180px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#register{
+    text-align: center;
+    border: 1px solid;
+    width: 220px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
